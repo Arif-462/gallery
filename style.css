@@ -129,7 +129,10 @@ section h1{
 
 #arif{
     /* font-size: 5rem; */
-    color: #390af6;
+    color: #18c864;
+    border: 1px solid #ddd;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
 }
 
 
