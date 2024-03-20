@@ -8,78 +8,288 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
-        <marquee behavior="" direction="rtl">এ্যালামনাই ২০০৩ ব্যাচ সোনাতনী উচ্চ বিদ্যালয়</marquee>
-    </div>
-    <div class="gallery-wrap">
-        <i class="fa-solid fa-arrow-left" id="prev"></i>
-        <div class="gallery">
-            <div>            
-                <span><img src="gallery/shuvo.jpg" alt=""><b>Shuvo</b></span>
-                <span><img src="gallery/arif1.jpg" alt=""><b>Arif</b></span>
-                             
-            </div>
-            <div>
-                <span><img src="gallery/rubel.jpg" alt=""><b>Rubel</b></span> 
-                <span><img src="gallery/rakib.jpg" alt=""><B>Rakib</B></span>
-            </div>
-            <div>            
-                <span><img src="gallery/rasel.jpg" alt=""><b>Rasel</b></span>
-                <span><img src="gallery/ramjan.jpg" alt=""><b>Ramjan</b></span>
-           
-            </div>
 
-            <div>            
-                <span><img src="gallery/alamgir.jpg" alt=""><b>Alamgir</b></span>                
-                <span><img src="gallery/juel.jpg" alt=""><b>Juel</b></span>              
-            </div>
-            <div>            
-                <span><img src="gallery/hasina.jpg" alt=""><b>Hasina</b></span>
-                <span><img src="gallery/sharmin.jpg" alt=""><b>Sharmin</b></span>                
-            </div>
-            <div>            
-                <span><img src="gallery/bably.jpg" alt=""><b>Bably</b></span>
-                <span><img src="gallery/rina.jpg" alt=""><b>Rina</b></span>                
-            </div>
-            <div>            
-                <span><img src="gallery/karim.jpg" alt=""><b>Karim</b></span>
-                <span><img src="gallery/mahmud.jpg" alt=""><b>Al Mahmud</b></span>                
-            </div>
-            <div>            
-                <span><img src="gallery/mannan.jpg" alt=""><b>Mannan</b></span>
-                <span><img src="gallery/saiful.jpg" alt=""><b>Saiful</b></span>                
-            </div>
-            <div>            
-                <span><img src="gallery/babul1.jpg" alt=""><b>Babul Hossain</b></span>
-                <span><img src="gallery/tapu.jpg" alt=""><b>Tapu</b></span>                
-            </div>
-            <div>            
-                <span><img src="gallery/modon.jpg" alt=""><b>Hridoy</b></span>
-                <span><img src="gallery/biplob.jpg" alt=""><b>Biplob</b></span>                
-            </div>
-            <div>            
-                <span><img src="gallery/babul2.jpg" alt=""><b>Babul Akter</b></span>
-                <span><img src="gallery/salam.jpg" alt="">Salam</span>                
-            </div>
-            <div>            
-                <span><img src="gallery/helal.jpg" alt=""><b>Helal</b></span>
-                <span><img src="gallery/bablu1.jpg" alt="">Boro Babul</span>                
-            </div>
-            <div>            
-                <span><img src="gallery/khokon1.jpg" alt=""><b>Mondol Khokon</b></span>
-                <span><img src="gallery/khokon2.jpg" alt=""><b>Choto Khokon</b></span>                
-            </div>
-            <div>            
-                <span><img src="gallery/nur.jpg" alt=""><b>Nur Islam</b></span>
-                <span><img src="gallery/shohel.jpg" alt=""><b>Shohel</b></span>                
-            </div>
+    <header class="header"> 
+
+        <div class="logo">
+            <img src="gallery/logo.png" alt="SSC-2003">        
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
-        <i class="fa-solid fa-arrow-right" id="next"></i>
-    </div>
 
-    <script src="script.js">
-        let scrollContainer = document.quer
-    </script>
+        <nav class="nav-link">
+            <a href="#">Home</a>
+            <a href="#">History</a>
+            <a href="#">Fb Group</a>
+        </nav>
+
+    </header>
+
+    <div class="breaking-news">
+        <marquee behavior="" direction="rtl">এ্যালামনাই ২০০৩ ব্যাচ, সোনাতনী উচ্চ বিদ্যালয়</marquee>
+    </div>
+    <section id="home" class="home">
+        <h1>Alumni Photo Album</h1>
+        <div class="gallery">  
+
+            <div class="profile">
+                <img src="gallery/shuvo.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Adnan Babu Shuvo</h3>
+                    <p>
+                        Alumni-2003, Sonatani High School
+                    </P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/rubel.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Rashidul Islam</h3>
+                    <p>
+                        Alumni-2003, Sonatani High School
+                    </P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/arif1.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Ariful Islam</h3>
+                    <p>
+                        Alumni-2003, Sonatani High School
+                    </P>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="gallery/juel.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Julfikar Ali</h3>
+                    <p> Alumni-2003, Sonatani High School </P>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="gallery/sm-bablu.jpg" alt="Small Bablu">
+                <div class="profile-info">
+                    <h3>Md Bablu Mia</h3>
+                    <p>Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/tapu.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Shazzadul Haque Topu</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/Rakib.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Rakibul Islam</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="gallery/alamgir.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Alamgir Hossain</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="gallery/ramjan.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Ramjan Ali</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/bablu1.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Late: Babul Akter</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/Rasel.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Rasel Mia</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div> 
+            
+            <div class="profile">
+                <img src="gallery/bably.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Sonia Nasrin Bably</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/hasina.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Mst Hasina Parvin</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/sharmin.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Mst Sharmin Akter</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/rina.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Mst Rina Khatun</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/mahmud.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Al Mahmud</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/karim.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Abdul karim</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/mannan.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Abdul Mannan</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/saiful.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Saiful Islam</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/babul1.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Babul Hossain</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+            
+            <div class="profile">
+                <img src="gallery/babul2.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Babul Akter</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/khokon2.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Khokon Mia</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/modon.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Modon Kumar</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/biplob.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Biplob Kumar Halder</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/salam.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Abdus Salam</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div> 
+            
+            <div class="profile">
+                <img src="gallery/abusama.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Abusama</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/helal.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Helal Uddin</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/Khokon1.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Khokon Mondol</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/shohel.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Shohel Akter</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="gallery/nur.jpg" alt="">
+                <div class="profile-info">
+                    <h3>Md Nur Islam</h3>
+                    <p> Alumni-2003, Sonatani High School</P>
+                </div>
+            </div>   
+                    
+            
+                    
+           
+                    
+            
+            
+        </div>       
+    </section>
+    
+    
+    <footer id="footer" class="footer">
+        <a href="https://www.facebook.com/ariful462" target="_blank"><i class="fa-brands fa-facebook" > </i></a>
+        <a href="mailto:ariful10462@gmail.com" target="_blank"><i class="fa-solid fa-envelope" > </i></a>
+        <p>All Rights Reserved &copy; By <span id="arif">Arif</span></p>
+        
+    </footer>
+    
     
     
 </body>

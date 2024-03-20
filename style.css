@@ -2,61 +2,256 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(99, 102, 97);
+    background-color: rgb(158, 237, 244);
 }
 
-marquee{
-    color: red;
-    font-size: 5rem;
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7308c4;
+    padding: 0.5rem 5rem;
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 15%;
+    border-radius: 50%;
+}
+#menu-icon{
+    color: #ddd; 
+    display: none;   
+}
+
+
+
+.nav-link{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.nav-link a{
+   color: #ddd;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.nav-link a:hover{
+    color: #10b7e1;
+    border-bottom: 3px solid #ddd;
+ }
+
+.breaking-news{
+    margin-top: 5rem;
+    color: #600e0e;
+    font-size: 2rem;
     margin-bottom: 0;
+    /* display: none; */
+    position: sticky;
+}
+
+section{
+    min-height: 100dvh;
+    padding: 0 5rem;    
+}
+
+section h1{
+    color: #910c05; 
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+ 
 }
 
 .gallery{
-    width: 1000px;
     display: flex;
-    overflow-x: scroll;
+    flex-wrap: wrap;
+    gap: 3rem;    
 }
 
-.gallery div{
-    width: 100%;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-    display: grid;
-    flex: none;
-}
-
-.gallery div img{    
-    width: 30rem;
+.profile{
+    width: 29%;
     height: 30rem;
-    filter: grayscale(100%);
-    transition: transform 0.5s;
-    border: 1px solid black;
+    background-color: #6c3702;
+    color: #ddd;
+    padding: 0.5rem;
+    box-shadow: 0 0 1rem #130c0c; 
+    transition: 0.4s;  
+    border-radius: 0.5rem;
+    text-align: center;
 }
 
-.gallery div img:hover{
-    cursor: pointer;
-    filter: grayscale(0);
-    transform: scale(1.1);
+.profile:hover{
+    transform: scale(1.1);   
 }
 
-.gallery::-webkit-scrollbar{
-    display: none;
+.gallery .profile img{
+    width: 100%; 
+    height: 80%;  
 }
 
-.gallery-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10% auto;
-    margin-top: 0;
 
+.footer{
+    background-color: red;
+    text-align: center;
+    color: #ddd;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 2rem;
 }
 
-#prev, #next{
-    width: 5rem;
-    font-weight: bold;
-    font-size: 5rem;
-    border-radius: 2rem;
-    margin: 0 2rem;
-    cursor: pointer;
+.footer a{
+    margin-left: 2rem;
+    color: #ddd;
+    font-size: 3rem;
+    padding: 2rem;
 }
+
+.footer a:hover{    
+    color: #3eeb32;    
+}
+
+#arif{
+    /* font-size: 5rem; */
+    color: #390af6;
+}
+
+
+
+/* device settings */
+@media (max-width:1260px){
+   
+    .profile{
+        width: 28%;
+    }
+}
+
+@media (max-width:1060px){
+   html{
+    font-size: 75%;
+   }
+   .breaking-news{
+    margin-top: 5rem;
+   }
+
+   
+   
+}
+
+@media (max-width:795px){
+   .header{
+    padding: 1rem 2rem;
+   }
+    .profile{
+        width: 42%;
+    }    
+    
+ }
+
+
+ @media (max-width:500px){
+    
+
+    .header{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }   
+
+    .logo img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .nav-link{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #050114;
+        font-size: 3rem;
+        
+    }     
+    .home h1{
+        font-size: 3rem;
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    .breaking-news{
+        margin-top: 3rem;
+        display: none;
+    }
+
+    .profile{
+        width: 40%;
+    }
+    
+ }
+ @media (max-width:420px){
+    .profile{
+        width: 100%;
+        padding: 0;
+    }
+
+    .home h1{
+        font-size: 2rem;
+        margin-top: 9rem;
+    }
+
+    .footer{
+       font-size: 1rem;
+    }
+
+    .footer a{
+        font-size: 2rem;
+     }
+
+     section{
+        padding: 1.5rem;
+    }
+
+
+    
+ }
+
+ @media (max-width:320px){
+
+    .header{
+        padding: 1rem;
+        text-align: center;
+    }
+    section{
+        padding: 1rem;
+    }
+
+    .home h1{
+        margin-top: 8rem;
+        font-size: 1.5rem;
+    }
+    .profile{
+        width: 100%;
+        padding: 0;
+    }
+
+    .profile-info{
+        padding: 0;
+    }
+    
+ }
